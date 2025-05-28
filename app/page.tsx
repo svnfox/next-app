@@ -1,12 +1,20 @@
 import Image from "next/image";
 
-export default function Home() {
+// async function fetchData() {
+//   await new Promise((r) => setTimeout(r, 500)) // 延迟3秒
+//   return { message: 'Hello World' }
+// }
+
+export default async function Home() {
+  // const data = await fetchData()
+
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+        {/*<div>{data.message}</div>*/}
         <Image
           className="dark:invert"
-          src="/next.svg"
+          src="/images/next.svg"
           alt="Next.js logo"
           width={180}
           height={38}
@@ -34,7 +42,7 @@ export default function Home() {
           >
             <Image
               className="dark:invert"
-              src="/vercel.svg"
+              src="/images/vercel.svg"
               alt="Vercel logomark"
               width={20}
               height={20}
@@ -60,7 +68,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/file.svg"
+            src="/images/file.svg"
             alt="File icon"
             width={16}
             height={16}
@@ -75,7 +83,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/window.svg"
+            src="/images/window.svg"
             alt="Window icon"
             width={16}
             height={16}
@@ -90,7 +98,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/globe.svg"
+            src="/images/globe.svg"
             alt="Globe icon"
             width={16}
             height={16}
